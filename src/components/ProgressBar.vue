@@ -1,7 +1,13 @@
 <script setup>
   import { ref, watch } from 'vue';
 
-  const props = defineProps(['playing', 'total'])
+  const props = defineProps({
+    playing: Boolean,
+    total: {
+      type: Number,
+      default: 0
+    }
+  });
 
   let idInterval;
   const widthProgressBar = ref(0);
@@ -17,7 +23,7 @@
         loop.value = 0;
       }
     }, 500);
-  }
+  };
 
   const play = async () => {
     widthProgressBar.value = 0;
@@ -42,7 +48,10 @@
 </script>
 
 <template>
-  <div class="progressBar" :style="`width: ${widthProgressBar}%;`"></div>
+  <div
+    class="progressBar"
+    :style="`width: ${widthProgressBar}%;`"
+  />
 </template>
 
 <style scoped>

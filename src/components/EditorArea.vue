@@ -1,11 +1,11 @@
 <script setup>
   import { ref, watch } from 'vue';
-  import * as Tone from 'tone';
-  import factory from '../pieces/factory';
   import Composer from '../services/Composer';
   import ProgressBar from './ProgressBar.vue';
 
-  const props = defineProps(['started']);
+  const props = defineProps({
+    started: Boolean
+  });
   const playing = ref(false);
   const dataSynth = ref(`
 asdasd
@@ -20,7 +20,7 @@ asdasd
 
   const play = async () => {
     playing.value = true;
-    composer.play()
+    composer.play();
   };
 
   const stop = () => {
@@ -53,10 +53,23 @@ asdasd
 </script>
 
 <template>
-  <button v-on:click="play" v-if="!playing">Play</button>
-  <button v-on:click="stop" v-else>Stop</button>
-  <progress-bar :playing="playing" :total="composer.getLoopTime()" />
-  <textarea v-model="dataSynth"></textarea>
+  <button
+    v-if="!playing"
+    @click="play"
+  >
+    Play
+  </button>
+  <button
+    v-else
+    @click="stop"
+  >
+    Stop
+  </button>
+  <progress-bar
+    :playing="playing"
+    :total="composer.getLoopTime()"
+  />
+  <textarea v-model="dataSynth" />
 </template>
 
 <style scoped>

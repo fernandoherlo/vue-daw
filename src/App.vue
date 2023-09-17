@@ -16,23 +16,27 @@ const start = async () => {
 
   started.value = true;
   logger.log('audio is ready');
-}
+};
 
 const stop = async () => {
   Tone.Transport.stop();
 
   started.value = false;
   logger.log('stop audio');
-}
+};
 </script>
 
 <template>
   <div v-if="started">
-    <button v-on:click="stop">Stop transport</button>
-    <editor-area :started="started"></editor-area>
+    <button @click="stop">
+      Stop transport
+    </button>
+    <editor-area :started="started" />
   </div>
   <div v-else>
-    <button v-on:click="start">Start</button>
+    <button @click="start">
+      Start
+    </button>
   </div>
 </template>
 

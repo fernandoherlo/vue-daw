@@ -5,7 +5,7 @@ import samples from './samples.json';
 const data = {
   context,
   sampleLibrary: {
-    request: () => new Promise((resolve, reject) => {
+    request: () => new Promise((resolve) => {
       resolve(samples);
     })
   },
@@ -15,7 +15,7 @@ const data = {
 const factory = async (piece) => {
   const [deactivate, schedule] = await pieces[piece](data);
   const end = schedule();
-  return [end, deactivate, schedule]; 
-}
+  return [end, deactivate, schedule];
+};
 
 export default factory;

@@ -34,7 +34,7 @@ export default class Composer {
       if (!this._value) {
         return;
       }
-      commandsFounded = []
+      commandsFounded = [];
     
       try {
         const commands = this._value.split('\n');
@@ -100,7 +100,7 @@ export default class Composer {
     });
   }
 
-  stop () {
+  end () {
     clearInterval(this._idInterval);
     this._playing = false;
 

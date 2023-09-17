@@ -1,9 +1,14 @@
 <script setup>
   import { ref, watch } from 'vue';
-  import * as Tone from 'tone';
   import factory from '../pieces/factory';
 
-  const props = defineProps(['piece', 'started'])
+  const props = defineProps({
+    started: Boolean,
+    piece: {
+      type: String,
+      default: ''
+    }
+  });
   const playing = ref(false);
 
   let end, deactivate;
@@ -34,8 +39,18 @@
 </script>
 
 <template>
-  <button v-on:click="play" v-if="!playing">Play</button>
-  <button v-on:click="stop" v-else>Stop</button>
+  <button
+    v-if="!playing"
+    @click="play"
+  >
+    Play
+  </button>
+  <button
+    v-else
+    @click="stop"
+  >
+    Stop
+  </button>
   <hr>
 </template>
 
