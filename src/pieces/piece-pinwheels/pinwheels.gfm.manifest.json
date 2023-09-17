@@ -1,0 +1,17 @@
+{
+  "visualizationType": "squareCut",
+  "title": "Pinwheels",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "pinwheels",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "acoustic"
+  ],
+  "releaseDate": "2018-08-10T00:00:00.000Z",
+  "sampleNames": [
+    "vsco2-piano-mf"
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/pinwheels-excerpts"
+}

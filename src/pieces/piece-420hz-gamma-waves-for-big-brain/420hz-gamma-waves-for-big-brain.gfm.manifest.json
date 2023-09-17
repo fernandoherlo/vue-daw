@@ -1,0 +1,21 @@
+{
+  "title": "420hz Gamma Waves for Big Brain",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "420hz-gamma-waves-for-big-brain",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "dream",
+    "electronic",
+    "drone"
+  ],
+  "releaseDate": "2020-01-21T00:00:00.000Z",
+  "visualizationType": "squareCut",
+  "sampleNames": [
+    "waves",
+    "vsco2-piano-mf",
+    "sso-chorus-male"
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/420hz-gamma-waves-for-big-brain-excerpts"
+}

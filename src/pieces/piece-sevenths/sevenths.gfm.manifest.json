@@ -1,0 +1,17 @@
+{
+  "visualizationType": "squareCut",
+  "title": "Sevenths",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "sevenths",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "acoustic"
+  ],
+  "releaseDate": "2018-07-21T00:00:00.000Z",
+  "sampleNames": [
+    "vsco2-piano-mf"
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/sevenths-excerpts"
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@generative-music/piece-ritual",
+  "main": "dist/cjs.js",
+  "module": "dist/esm.js",
+  "version": "5.2.0",
+  "generativeFmManifest": "ritual.gfm.manifest.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generative-music/pieces-alex-bainter.git"
+  },
+  "files": [
+    "dist",
+    "image.png",
+    "ritual.gfm.manifest.json"
+  ],
+  "author": "Alex Bainter <alexbainter+github@gmail.com> (https://alexbainter.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/generative-music/pieces-alex-bainter/issues"
+  },
+  "homepage": "https://github.com/generative-music/pieces-alex-bainter#readme",
+  "peerDependencies": {
+    "tone": "^14.7.58"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "@generative-music/utilities": "^5.2.0",
+    "tonal": "^2.2.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1"
+  },
+  "unpkg": "dist/umd.min.js"
+}

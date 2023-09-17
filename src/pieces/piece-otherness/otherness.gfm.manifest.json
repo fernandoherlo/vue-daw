@@ -1,0 +1,17 @@
+{
+  "visualizationType": "squareCut",
+  "title": "Otherness",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "otherness",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "electronic"
+  ],
+  "releaseDate": "2019-01-11T00:00:00.000Z",
+  "sampleNames": [
+    "otherness"
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/otherness-excerpts"
+}

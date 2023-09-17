@@ -1,0 +1,20 @@
+{
+  "visualizationType": "squareCut",
+  "title": "Return to Form",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "return-to-form",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "electronic"
+  ],
+  "releaseDate": "2019-04-06T00:00:00.000Z",
+  "sampleNames": [
+    [
+      "return-to-form__vsco2-piano-mf",
+      "vsco2-piano-mf"
+    ]
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/return-to-form-excerpts"
+}

@@ -1,0 +1,18 @@
+{
+  "visualizationType": "squareCut",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "title": "Eno Machine",
+  "id": "eno-machine",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "calm",
+    "acoustic"
+  ],
+  "releaseDate": "2018-05-07T00:00:00.000Z",
+  "sampleNames": [
+    "vsco2-piano-mf"
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/eno-machine-excerpts"
+}

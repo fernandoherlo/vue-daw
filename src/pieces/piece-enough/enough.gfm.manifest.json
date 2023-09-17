@@ -1,0 +1,18 @@
+{
+  "visualizationType": "squareCut",
+  "title": "Enough",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "enough",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "dark",
+    "electronic"
+  ],
+  "releaseDate": "2019-05-12T00:00:00.000Z",
+  "sampleNames": [
+    "sso-cor-anglais"
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/enough-excerpts"
+}

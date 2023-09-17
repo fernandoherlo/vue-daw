@@ -1,0 +1,21 @@
+{
+  "visualizationType": "squareCut",
+  "title": "Expand/Collapse",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "expand-collapse",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "acoustic",
+    "electronic"
+  ],
+  "releaseDate": "2019-06-02T00:00:00.000Z",
+  "sampleNames": [
+    [
+      "expand-collapse__vsco2-piano-mf",
+      "vsco2-piano-mf"
+    ]
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/expand-collapse-excerpts"
+}

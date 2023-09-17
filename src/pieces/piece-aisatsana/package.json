@@ -1,0 +1,37 @@
+{
+  "name": "@generative-music/piece-aisatsana",
+  "version": "5.2.0",
+  "description": "",
+  "main": "dist/cjs.js",
+  "module": "dist/esm.js",
+  "generativeFmManifest": "aisatsana.gfm.manifest.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generative-music/piece-aisatsana.git"
+  },
+  "files": [
+    "dist",
+    "image.png",
+    "aisatsana.gfm.manifest.json"
+  ],
+  "author": "Alex Bainter <alexbainter+github@gmail.com> (https://alexbainter.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/generative-music/piece-aisatsana/issues"
+  },
+  "homepage": "https://github.com/generative-music/piece-aisatsana#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "rollup-plugin-json": "^3.1.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "@generative-music/utilities": "^5.2.0",
+    "markov-chains": "^1.0.2"
+  },
+  "peerDependencies": {
+    "tone": "^14.7.39"
+  },
+  "gitHead": "8ed39368a8376ff9ea366fe8e1ab01820553a037",
+  "unpkg": "dist/umd.min.js"
+}

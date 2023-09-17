@@ -1,0 +1,20 @@
+{
+  "title": "No Refrain",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "no-refrain",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "acoustic"
+  ],
+  "releaseDate": "2019-09-01T00:00:00.000Z",
+  "visualizationType": "squareCut",
+  "sampleNames": [
+    [
+      "no-refrain__vsco2-piano-mf",
+      "vsco2-piano-mf"
+    ]
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/no-refrain-excerpts"
+}

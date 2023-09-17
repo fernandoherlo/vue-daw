@@ -1,0 +1,36 @@
+{
+  "name": "@generative-music/piece-didgeridoobeats",
+  "main": "dist/cjs.js",
+  "module": "dist/esm.js",
+  "generativeFmManifest": "didgeridoobeats.gfm.manifest.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generative-music/pieces-alex-bainter.git"
+  },
+  "files": [
+    "dist",
+    "image.png",
+    "didgeridoobeats.gfm.manifest.json"
+  ],
+  "author": "Alex Bainter <alexbainter+github@gmail.com> (https://alexbainter.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/generative-music/pieces-alex-bainter/issues"
+  },
+  "homepage": "https://github.com/generative-music/piece-s-alex-bainter#readme",
+  "peerDependencies": {
+    "tone": "^14.7.39"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "5.2.0",
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "@generative-music/utilities": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.1"
+  },
+  "unpkg": "dist/umd.min.js"
+}

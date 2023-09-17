@@ -1,0 +1,22 @@
+{
+  "visualizationType": "squareCut",
+  "title": "Spring Again",
+  "makePiece": "./dist/esm.js",
+  "image": "./image.png",
+  "id": "spring-again",
+  "artistId": "alex-bainter",
+  "isRecordable": true,
+  "tags": [
+    "acoustic"
+  ],
+  "releaseDate": "2019-02-22T00:00:00.000Z",
+  "sampleNames": [
+    [
+      "spring-again__vsco2-piano-mf",
+      "vsco2-piano-mf"
+    ],
+    "vsco2-violins-susvib",
+    "vsco2-cello-susvib-f"
+  ],
+  "bandcampUrl": "http://alexbainter.bandcamp.com/album/spring-again-excerpts"
+}
