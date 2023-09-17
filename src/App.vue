@@ -10,25 +10,31 @@
     rng: () => Math.random()
   };
 
-  const start = async () => {
-    await Tone.start();
-    started.value = true;
+const start = async () => {
+  await Tone.start();
+  Tone.Transport.start();
 
-    // Iniciar el transporte de Tone.js para que la música se reproduzca
-    Tone.Transport.start();
+  started.value = true;
+  logger.log('audio is ready');
+}
 
-    logger.log('audio is ready');
-  }
+const stop = async () => {
+  Tone.Transport.stop();
+
+  started.value = false;
+  logger.log('stop audio');
+}
 </script>
 
 <template>
-  <div v-if="!started">
+  <div v-show="started">
+    <button v-on:click="stop">Stop transport</button>
+    <piece :piece="'enough'" :started="started"></piece>
+    <piece :piece="'eno-machine'" :started="started"></piece>
+  </div>
+  <div v-show="!started">
     <button v-on:click="start">Start</button>
   </div>
-  <template v-else>
-    <piece :piece="'enough'"></piece>
-    <piece :piece="'eno-machine'"></piece>
-  </template>
 </template>
 
 <style scoped>
