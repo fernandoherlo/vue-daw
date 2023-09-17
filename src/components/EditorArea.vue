@@ -12,7 +12,7 @@ asdasd
 p(enough)
 asdasd
 asdasd
-p(eno-machine)
+p(enoMachine)
 asdasd
   `);
 
@@ -20,7 +20,7 @@ asdasd
 
   const play = async () => {
     playing.value = true;
-    composer.play();
+    composer.play()
   };
 
   const stop = () => {
