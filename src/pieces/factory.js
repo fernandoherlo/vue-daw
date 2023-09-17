@@ -12,10 +12,10 @@ const data = {
   destination: Destination
 };
 
-const execute = async (piece) => {
+const factory = async (piece) => {
   const [deactivate, schedule] = await pieces[piece](data);
   const end = schedule();
-  return [end, deactivate]; 
+  return [end, deactivate, schedule]; 
 }
 
-export default execute;
+export default factory;

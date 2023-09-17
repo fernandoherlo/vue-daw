@@ -2,7 +2,7 @@
   import { ref } from 'vue';
   import * as Tone from 'tone';
   import { logger } from './utils';
-  import Piece from './components/Piece.vue';
+  import EditorArea from './components/EditorArea.vue';
 
   const started = ref(false);
 
@@ -27,12 +27,11 @@ const stop = async () => {
 </script>
 
 <template>
-  <div v-show="started">
+  <div v-if="started">
     <button v-on:click="stop">Stop transport</button>
-    <piece :piece="'enough'" :started="started"></piece>
-    <piece :piece="'eno-machine'" :started="started"></piece>
+    <editor-area :started="started"></editor-area>
   </div>
-  <div v-show="!started">
+  <div v-else>
     <button v-on:click="start">Start</button>
   </div>
 </template>

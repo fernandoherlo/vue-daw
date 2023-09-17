@@ -1,5 +1,6 @@
 const logger = {
-  log: (message) => console.log(message)
+  log: (...message) => console.log(...message),
+  error: (...message) => console.error(...message)
 }
 
 export { logger }

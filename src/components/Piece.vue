@@ -1,7 +1,7 @@
 <script setup>
-  import { ref, defineProps, watch } from 'vue';
+  import { ref, watch } from 'vue';
   import * as Tone from 'tone';
-  import piece from '../pieces/piece';
+  import factory from '../pieces/factory';
 
   const props = defineProps(['piece', 'started'])
   const playing = ref(false);
@@ -10,7 +10,7 @@
 
   const play = async () => {
     playing.value = true;
-    [end, deactivate] = await piece(props.piece);
+    [end, deactivate] = await factory(props.piece);
   };
 
   const stop = () => {
@@ -36,6 +36,7 @@
 <template>
   <button v-on:click="play" v-if="!playing">Play</button>
   <button v-on:click="stop" v-else>Stop</button>
+  <hr>
 </template>
 
 <style scoped>
