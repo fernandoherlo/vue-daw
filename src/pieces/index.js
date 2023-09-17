@@ -1,5 +1,5 @@
-import enough from '../pieces/piece-enough/src/piece';
-import enoMachine from '../pieces/piece-eno-machine/src/piece';
+import enough from './packages/piece-enough/src/piece';
+import enoMachine from './packages/piece-eno-machine/src/piece';
 
 export { 
   enough as 'enough',
